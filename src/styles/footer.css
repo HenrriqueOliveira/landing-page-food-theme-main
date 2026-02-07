@@ -1,0 +1,225 @@
+footer {
+    background-color: var(--color-primary-2);
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}/* Animação de entrada */
+#banner img {
+    animation: bannerFade 1.2s ease forwards, bannerFloat 6s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes bannerFade {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes bannerFloat {
+    0%, 100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    50% {
+        transform: translateY(-15px) translateX(0) scale(1.02);
+    }
+}
+
+/* Hover opcional */
+#banner img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+#banner img {
+    animation: bannerFade 1.2s ease forwards, bannerFloat 6s ease-in-out infinite;
+    transform-origin: center;
+}
+
+/* Entrada suave do banner */
+@keyframes bannerFade {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Efeito flutuante contínuo */
+@keyframes bannerFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-15px) scale(1.02);
+    }
+}
+
+/* Hover interativo */
+#banner img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+/* ===================== */
+/* DARK MODE */
+/* ===================== */
+
+:root {
+  --bg-color: #fff7e6;
+  --text-color: #1f1f1f;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dish,
+.testimonial-card {
+  background-color: var(--card-bg);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --card-bg: #1e1e1e;
+}
+/* ===================== */
+/* ANIMAÇÕES */
+/* ===================== */
+
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===================== */
+/* DARK MODE GLOBAL */
+/* ===================== */
+
+:root {
+  --bg-main: #fff7e6;
+  --bg-secondary: #ffffff;
+  --bg-header: #ffffff;
+  --bg-footer: #ffffff;
+
+  --text-main: #1f1f1f;
+  --text-secondary: #555;
+
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+  --bg-main: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-header: #1a1a1a;
+  --bg-footer: #1a1a1a;
+
+  --text-main: #f5f5f5;
+  --text-secondary: #cfcfcf;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===================== */
+/* APLICAÇÃO GLOBAL */
+/* ===================== */
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: var(--bg-header);
+}
+
+section {
+  background-color: var(--bg-main);
+}
+
+footer {
+  background-color: var(--bg-footer);
+}
+
+/* ===================== */
+/* TEXTOS */
+/* ===================== */
+
+h1, h2, h3, h4, h5, h6,
+p, span, a {
+  color: var(--text-main);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+}
+
+/* ===================== */
+/* CARDS */
+/* ===================== */
+
+.dish,
+.feedback,
+.payment-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+/* ===================== */
+/* NAVBAR */
+/* ===================== */
+
+#navbar {
+  background-color: var(--bg-header);
+}
+
+#nav_list a {
+  color: var(--text-main);
+}
+
+/* ===================== */
+/* BOTÕES */
+/* ===================== */
+
+.btn-default {
+  background-color: #ffb703;
+  color: #1f1f1f;
+}
+
+body.dark-mode .btn-default {
+  background-color: #ffb703;
+  color: #1f1f1f;
+}

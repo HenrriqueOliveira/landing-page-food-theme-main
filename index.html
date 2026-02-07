@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Landing page</title>
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+
+        <ul id="nav_list">
+            <li class="nav-item active"><a href="#home">Início</a></li>
+            <li class="nav-item"><a href="#menu">Cardápio</a></li>
+            <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+            <li class="nav-item"><a href="#payment">Pagamento</a></li>
+        </ul>
+
+        <!-- AÇÕES DO HEADER -->
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <a href="#payment" class="btn-default">Peça aqui</a>
+            <button id="toggle-theme" class="btn-default" aria-label="Alternar tema">
+                🌙
+            </button>
+        </div>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item"><a href="#home">Início</a></li>
+            <li class="nav-item"><a href="#menu">Cardápio</a></li>
+            <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+            <li class="nav-item"><a href="#payment">Pagamento</a></li>
+        </ul>
+
+        <a href="#payment" class="btn-default">Peça aqui</a>
+    </div>
+</header>
+
+<main id="content">
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="shape"></div>
+
+        <div id="cta">
+            <h1 class="title">
+                O sabor que vai até <span>você</span>
+            </h1>
+
+            <p class="description">
+                Pratos preparados com carinho, ingredientes frescos e entrega rápida até a sua porta.
+            </p>
+
+            <div id="cta_buttons">
+                <a href="#menu" class="btn-default">Ver cardápio</a>
+
+                <a href="tel:+55555555555" id="phone_button">
+                    <button class="btn-default">
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                    (55) 21966968476
+                </a>
+            </div>
+
+            <div class="social-media-buttons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <img src="src/images/hero.png" alt="Imagem principal">
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="menu">
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+        <div id="dishes">
+            <div class="dish animate">
+                <img src="src/images/dish.png" class="dish-image" alt="Prato Especial">
+                <h3 class="dish-title">Prato Especial</h3>
+                <span class="dish-description">
+                    Uma combinação especial preparada com ingredientes frescos e muito sabor.
+                </span>
+                <button class="btn-default">Finalizar pedido</button>
+            </div>
+
+            <div class="dish animate">
+                <img src="src/images/dish2.png" class="dish-image" alt="Prato Tradicional">
+                <h3 class="dish-title">Prato Tradicional</h3>
+                <span class="dish-description">
+                    Receita clássica, feita com aquele gostinho caseiro que todo mundo ama.
+                </span>
+                <button class="btn-default">Finalizar pedido</button>
+            </div>
+
+            <div class="dish animate">
+                <img src="src/images/dish3.png" class="dish-image" alt="Prato Executivo">
+                <h3 class="dish-title">Prato Executivo</h3>
+                <span class="dish-description">
+                    Uma refeição equilibrada, ideal para o dia a dia, prática e deliciosa.
+                </span>
+                <button class="btn-default">Finalizar pedido</button>
+            </div>
+
+            <div class="dish animate">
+                <img src="src/images/dish4.png" class="dish-image" alt="Prato Premium">
+                <h3 class="dish-title">Prato Premium</h3>
+                <span class="dish-description">
+                    Uma experiência gastronômica completa, com ingredientes selecionados e apresentação sofisticada.
+                </span>
+                <button class="btn-default">Finalizar pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="testimonials">
+        <img src="src/images/chef.png" id="testimonial_chef" alt="Chef">
+
+        
+        <div id="testimonials_content">
+            <h2 class="section-title">Depoimentos</h2>
+            <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+             <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/images/avatar.png" class="feedback-avatar" alt="Cliente">
+                    <div class="feedback-content">
+                        <p>
+                            Daniella 
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>“Pratos bem servidos e cheios de sabor. Já virei cliente fiel.”</p>
+                    </div>
+                </div>
+            </div>
+            
+
+             <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/images/avatar.png" class="feedback-avatar" alt="Cliente">
+                    <div class="feedback-content">
+                        <p>
+                            Débora Souza
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>“Comida deliciosa, entrega rápida e ótimo atendimento. Recomendo muito!”</p>
+                    </div>
+                </div>
+            </div>
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/images/avatar.png" class="feedback-avatar" alt="Cliente">
+                    <div class="feedback-content">
+                        <p>
+                            Thamires
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>“Excelente custo-benefício. Sempre peço e nunca me decepciono.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-default">Ver mais avaliações</button>
+        </div>
+    </section>
+
+    <!-- PAGAMENTO -->
+    <section id="payment">
+        <h2 class="section-title">Pagamento</h2>
+        <h3 class="section-subtitle">Finalize seu pedido</h3>
+
+        <div class="payment-box">
+            <p>Escolha a forma de pagamento:</p>
+            <button class="btn-default">💳 Cartão</button>
+            <button class="btn-default">📱 Pix</button>
+            <button class="btn-default">💵 Dinheiro</button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <img src="src/images/wave.svg" alt="">
+
+    <div id="footer_items">
+        <span id="copyright">
+            &copy; 2026 Henrique Oliveira
+        </span>
+
+        <div class="social-media-buttons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="src/javascript/script.js"></script>
+</body>
+</html>
