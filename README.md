@@ -1,18 +1,33 @@
-# 🍔 Landing Page
+🍔 Página Inicial Restaurante
 
-Uma landing page responsiva com tema de restaurante, construída com HTML, CSS e JavaScript. Este projeto apresenta um design limpo com animações suaves.
+Landing page responsiva com tema de restaurante, desenvolvida para proporcionar uma experiência moderna, elegante e intuitiva para os usuários. 🚀
 
-## 🌐 Visualize o projeto:
+🛠️ Tecnologias Utilizadas
 
-**[Ver Projeto Online](https://larissakich.github.io/landing-page-food-theme/)**
+💻 HTML5
+🎨 CSS3
+⚡ JavaScript
 
-## 🛠️ Tecnologias Utilizadas
+✨ Funcionalidades
 
-- **HTML5**: Marcação semântica
-- **CSS3**: Estilização
-- **JavaScript**: Funcionalidade interativa
-- **jQuery**: Manipulação DOM e manipulação de eventos
-- **ScrollReveal**: Animações de scroll
-- **Font Awesome**: Ícones
-- **Google Fonts**: Fontes
+✅ Layout moderno e responsivo 📱
+✅ Design elegante e organizado 🎨
+✅ Animações suaves e interativas ✨
+✅ Navegação intuitiva 🚀
+✅ Seções de destaque para pratos e serviços 🍕
+✅ Experiência otimizada para diferentes dispositivos 💻📲
+
+📸 Prévia do Projeto
+
+🍽️ Landing page inspirada em restaurantes modernos, com foco em visual atrativo e experiência do usuário.
+
+🚀 Objetivo do Projeto
+
+Este projeto foi desenvolvido para praticar habilidades em desenvolvimento Front-End, trabalhando conceitos como:
+
+📌 Estruturação semântica com HTML
+📌 Estilização moderna com CSS
+📌 Interatividade com JavaScript
+📌 Responsividade para múltiplos dispositivos
+📌 Criação de interfaces profissionais
 
